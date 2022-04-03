@@ -1,0 +1,71 @@
+.last-mb-none *:last-child {
+    margin-bottom: 0;
+}
+.banner-wrapper {
+    min-height: 400px;
+}
+.banner {
+    background-color: #0166cb;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #1d1b52;
+    z-index: -1;
+    opacity: 0.45;
+}
+.left-right-col {
+    min-height: 400px;
+}
+.left-right-col-bg {
+    position: relative;
+    z-index: 1;
+}
+.left-right-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 49.4vw;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.left-right-bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #1d1b52;
+    z-index: -1;
+    opacity: 0.45;
+}
+@media screen and (min-width: 768px) {
+    .option-2 .left-right-bg {
+        left: auto;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .left-right-bg {
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .left-right-bg {
+        left: calc((100vw - 540px) / -2)
+    }
+}

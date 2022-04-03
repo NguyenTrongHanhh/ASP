@@ -1,0 +1,66 @@
+body {
+    font-size: 18px;
+    color: rgb(19, 17, 17);
+    font-family: 'Roboto', sans-serif !important;
+}
+.text-inherit h1,
+.text-inherit h2,
+.text-inherit h3,
+.text-inherit h4,
+.text-inherit h5,
+.text-inherit h6,
+.text-inherit .h1,
+.text-inherit .h2,
+.text-inherit .h3,
+.text-inherit .h4,
+.text-inherit .h5,
+.text-inherit .h6 {
+    color: inherit;
+}
+h1,
+.h1 {
+    font-size: 30px;
+    color: #10557f;
+    font-weight: 700 !important;
+}
+h2,
+.h2 {
+    font-size: 30px;
+    color: #10557f;
+    font-weight: 700 !important;
+}
+h3,
+.h3 {
+    font-size: 30px;
+    color: #10557f;
+    font-weight: 700 !important;
+}
+h4,
+.h4 {
+    font-size: 30px;
+    color: #10557f;
+}
+h5,
+.h5 {
+    font-size: 30px;
+    color: #10557f;
+}
+h6,
+.h6 {
+    font-size: 30px;
+    color: #10557f;
+}
+.radius-30 {
+    border-radius: 30px;
+}
+.radius-50 {
+    border-radius: 60px;
+}
+ul, ol {
+    padding-left: 20px;
+}
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

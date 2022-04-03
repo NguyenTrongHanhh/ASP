@@ -1,0 +1,102 @@
+.last-mb-none *:last-child {
+    margin-bottom: 0;
+}
+.banner-wrapper {
+    min-height: 400px;
+}
+.banner {
+    background-color: #0166cb;
+    position: relative;
+    z-index: 1;
+}
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #1d1b52;
+    z-index: -1;
+    opacity: 0.45;
+}
+.left-right-col {
+    min-height: 400px;
+}
+.left-right-col-bg {
+    position: relative;
+    z-index: 1;
+}
+.left-right-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.multi-cols-content {
+    background-color: #1b5962;
+}
+.col-content {
+    box-shadow: 1px 1px 18px 2px rgb(28, 36, 48);
+}
+.col-content-1{
+    background-color: rgb(216, 153, 33);
+    
+}
+.col-content-2{
+    background-color: rgb(120, 181, 52);
+}
+.col-content-3{
+    background-color: rgb(212, 209, 20);
+}
+.col-content-4{
+    background-color: rgb(90, 55, 194);
+}
+.col-content-5{
+    background-color: rgb(180, 39, 75);
+}
+.col-content-6{
+    background-color: #e2ab48;
+}
+.col-content-7{
+    background-color: rgba(16, 165, 182, 0.453);
+}
+.col-content-8{
+    background-color: rgba(254, 201, 7, 0.453);
+}
+.col-content-9{
+    background-color: rgba(249, 5, 5, 0.494);
+}
+@media screen and (min-width: 1024px) {
+    .left-right-row {
+        min-height: 400px;
+        align-items: center;
+    }
+    .left-right-col-bg {
+        align-self: normal;
+    }
+}
+@media screen and (min-width: 768px) {
+    .option-2 .left-right-bg {
+        left: auto;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .left-right-bg {
+        width: 100vw;
+    }
+    .left-right-col-bg {
+        height: 180px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .left-right-bg {
+        left: calc((100vw - 540px) / -2)
+    }
+}
